@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width， initial-scale=1.0,naximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/head.css">
+    <script src=""></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .lis {
+        width: 100%;
+    }
+
+    .lis>ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    .lis>ul>li>a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .lis>ul>li:nth-of-type(1) {
+        font-weight: 900;
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .zhong {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .zhong>p {
+        color: white;
+    }
+    .lie{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #999;
+    }
+    .lie>ul{
+        width: 90%;
+        margin:  0 auto;
+    }
+    .lie>ul>li:nth-of-type(1){
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #999;
+    }
+    .lie>ul>li:nth-of-type(2){
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #999;
+    }
+    .lie>ul>li:nth-of-type(3){
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+    }
+    button{
+        width: 90%;
+        height: 5rem;
+        margin-top: 5rem;
+        margin-left:5% ;
+        background-color: white;
+        color: coral;
+        border:  1px solid #999;
+    }
+</style>
+
+<body>
+    <div class="allhead">
+        <div class="allhead_logo"></div>
+        <div class="allhead_my"><a href="#"></a></div>
+        <div class="allhead_download"><a href="#"></a></div>
+    </div>
+    <div class="lis">
+        <ul>
+            <li><a href="">首页</a></li>
+            <li>></li>
+            <li><a href="">我的</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <img src="./img/bg2.png" alt="" width="100%" height="100%">
+        <div class="zhong">
+            <img src="./img/urse2.png" alt="" class="tu2">
+            <p>欢迎你,18686868686</p>
+        </div>
+    </div>
+    <div class="lie">
+        <ul>
+            <li>我关注的房源<span>></span></li>
+            <li>我关注的小区<span>></span></li>
+            <li>我的看房记录<span>></span></li>
+        </ul>
+    </div>
+    <button>退出登录</button>
+</body>
+
+</html>
