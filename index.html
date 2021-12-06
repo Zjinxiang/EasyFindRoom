@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/尾部.css">
 
 </head>
 <body>
@@ -21,8 +22,168 @@
     <div class="search_box">
         <div class="search_input">
             <span></span>
-            <input type="text">
+            <input type="text" placeholder="输入小区和商圈名开始找房咯！">
         </div>
+    </div>
+
+    <!-- 导航选项 -->
+    <div class="navigation_option">
+        <li><span></span><br>二手房</li>
+        <li><span></span><br>租房</li>
+        <li><span></span><br>新房</li>
+        <li><span></span><br>卖房</li>
+    </div>
+
+    <!-- 背景图片 -->
+    <div class="redhouse"></div>
+
+    <!-- 热门房源 -->
+    <div class="navigaton_hothouse">
+        <p>热门房源</p>
+        <p>Hot House</p>
+    </div>
+
+    <!-- 房屋介绍 -->
+    <div class="housingIntroduced">
+        <span></span>
+        <div class="housingIntroduced_main">
+            <p>文化部中间层 一层带阳台</p>
+            <p>
+                <span>2室1厅96m²南北</span>
+                <span>1105万</span>
+            </p>
+            <p>
+                <span>红庙北里</span>
+                <span>1426元/平</span>
+            </p>
+            <p>
+                <span>学区房</span>
+                <span>独家</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="housingIntroduced2">
+        <span></span>
+        <div class="housingIntroduced_main">
+            <p>文化部中间层 一层带阳台</p>
+            <p>
+                <span>2室1厅96m²南北</span>
+                <span>1105万</span>
+            </p>
+            <p>
+                <span>红庙北里</span>
+                <span>1426元/平</span>
+            </p>
+            <p>
+                <span>学区房</span>
+                <span>独家</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="housingIntroduced3">
+        <span></span>
+        <div class="housingIntroduced_main">
+            <p>文化部中间层 一层带阳台</p>
+            <p>
+                <span>2室1厅96m²南北</span>
+                <span>1105万</span>
+            </p>
+            <p>
+                <span>红庙北里</span>
+                <span>1426元/平</span>
+            </p>
+            <p>
+                <span>学区房</span>
+                <span>独家</span>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 热门关注 -->
+    <div class="popular_attention">
+        <li class="clickchonse">热门关注</li>
+        <li class="clickchonse">友情链接</li>
+    </div>
+
+    <div class="introduce">
+        <li>北京二手房</li>
+        <li>北京找房无忧</li>
+        <li>北京二手房价</li>
+        <li>青年家园</li>
+        <li>海淀日租房</li>
+        <li>免税房源</li>
+        <li>朝阳新房</li>
+        <li>满五年唯—免税</li>
+    </div>
+
+
+
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="dibu">
+            <p>北京找房无忧 > 首页</p>
+            <div class="xian"></div>
+            <div class="dibui">
+                <div class="dibu1">
+                    <img src="./img/apple.png" alt="">
+                    <div class="pdiv">
+                        <p>iPhone</p>
+                        <p>客户端</p>
+                    </div>
+                </div>
+                <div class="dibu2">
+                    <img src="./img/android.png" alt="">
+                    <div class="pdiv">
+                    <p>android</p>
+                    <p>客户端</p>
+                </div>
+                </div>
+            </div>
+            <div class="wenben">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 小广告 -->
+    <div class="adlet">
+        <span id="close"></span>
+        <span></span>
+        <div>
+            <p>找房无忧</p>
+            <p>市场行情，一手掌握！</p>
+        </div>
+        <p>免费下载</p>
     </div>
 </body>
 </html>
+
+<script>
+    var popular_attention=document.getElementsByClassName('popular_attention')[0];
+    var clickchonse=document.getElementsByClassName('clickchonse')[0];
+    var clickchonsecopy=document.getElementsByClassName('clickchonse')[1];
+    console.log(clickchonse);
+    clickchonse.ontouchstart=function(){
+        clickchonse.style.color='rgb(255,138,0)';
+        clickchonse.style.borderBottom= '.2rem solid rgb(255,138,0)'
+        clickchonsecopy.style.color='black';
+        clickchonsecopy.style.borderBottom= 'none'
+    }
+    clickchonsecopy.ontouchstart=function(){
+        clickchonsecopy.style.color='rgb(255,138,0)';
+        clickchonsecopy.style.borderBottom= '.2rem solid rgb(255,138,0)'
+        clickchonse.style.color='black';
+        clickchonse.style.borderBottom= 'none'
+    }
+
+    var adlet=document.getElementsByClassName('adlet')[0];
+    var close=document.getElementById("close");
+    close.ontouchstart=function(){
+        adlet.style.display='none'
+    }
+</script>
