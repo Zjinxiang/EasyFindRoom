@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎登陆</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        html,body{
+            font-size: 62.5%;
+            background-color: rgb(245,245,245);
+        }
+        .top{
+            width: 100%;
+            height: 20rem;
+            background: url(./img/bg1.png) no-repeat center;
+            background-size: 100% 100%; 
+            position: relative;
+        }
+        .top>span:nth-of-type(1){
+            width: 4rem;
+            height: 5rem;
+            position: absolute;
+            top: 1rem;
+            right: 6rem;
+            text-align: center;
+            color: white;
+        }
+        .top>span:nth-of-type(1)>img{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .top>span:nth-of-type(2){
+            width: 4rem;
+            height: 5rem;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            text-align: center;
+            color: white;
+        }
+        .top>span:nth-of-type(2)>img{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        .top>span:nth-of-type(3){
+            width: 5rem;
+            height: 5rem;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
+            border-radius: 50%;
+            background: url(./img/urse2.png) no-repeat center;
+            background-size: 100% 100%;
+        }
+        .top>span:nth-of-type(4){
+            width: 7rem;
+            height: 3rem;
+            position: absolute;
+            top: 75%;
+            right: 50%;
+            transform: translate(50%,-50%);
+            border: 2px solid white;
+            text-align: center;
+            line-height: 3rem;
+        }
+        .top>span:nth-of-type(4)>a{
+            color: white;
+        }
+
+        .list{
+            width: 100%;
+            height: 22rem;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+        .list>li{
+            width: 90%;
+            height: 5rem;
+            border-bottom: 1px solid gainsboro;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .list>li:nth-of-type(1)>div>span{
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background: url(./img/icon1.png) no-repeat center;
+            background-size: 100% 100%;
+            vertical-align: -.5rem;
+        }
+        .list>li:nth-of-type(1)>div>p{
+            display: inline-block;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+        }
+
+        .list>li:nth-of-type(2)>div>span{
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background: url(./img/icon2.png) no-repeat center;
+            background-size: 100% 100%;
+            vertical-align: -.5rem;
+        }
+        .list>li:nth-of-type(2)>div>p{
+            display: inline-block;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+        }
+
+        .list>li:nth-of-type(3)>div>span{
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background: url(./img/icon3.png) no-repeat center;
+            background-size: 100% 100%;
+            vertical-align: -.5rem;
+        }
+        .list>li:nth-of-type(3)>div>p{
+            display: inline-block;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+        }
+
+        .list>li:nth-of-type(4)>div>span{
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background: url(./img/icon4.png) no-repeat center;
+            background-size: 100% 100%;
+            vertical-align: -.5rem;
+        }
+        .list>li:nth-of-type(4)>div>p{
+            display: inline-block;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <span><img src="./img/urse.png" alt=""><br>我的</span>
+        <span><img src="./img/down.png" alt=""><br>APP</span>
+        <span></span>
+        <span><a href="http://baidu.bfgho.com/">登录</a></span>
+    </div>
+
+    <div class="list">
+        <li>
+            <div><span></span><p>我关注的房源</p></div>
+            <span>></span>
+        </li>
+        <li>
+            <div><span></span><p>我关注的小区</p></div>
+            <span>></span>
+        </li>
+        <li>
+            <div><span></span><p>我关注的新房</p></div>
+            <span>></span>
+        </li>
+        <li>
+            <div><span></span><p>我的看房记录</p></div>
+            <span>></span>
+        </li>
+    </div>
+
+</body>
+
+</html>
