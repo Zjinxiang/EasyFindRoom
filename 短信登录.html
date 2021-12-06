@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width， initial-scale=1.0,naximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/短信登陆.css">
+   
+</head>
+
+<body>
+    <div class="dshouye">
+        <p><a href="" class="shouye">首页</a></p>
+        <p>></p>
+        <p><a href="" class="shouye1">找回密码</a></p>
+    </div>
+    <form action="">
+        <div class="shoujihao">
+            <input type="text" value="请输入手机号码" class="shouji"
+                pattern="^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$">
+            <span>
+                <input type="button" id="btn" value="获取验证码">
+            </span>
+        </div>
+
+        <div class="shoujihao1">
+            <input type="text" placeholder="请输入短信中的验证码" class="shouji">
+        </div>
+        <div class="shoujihao2">
+            <input type="password" placeholder="请输入新密码" class="shouji" pattern="^[a-z0-9]+$">
+        </div>
+        <div class="shoujihao3">
+            <input type="password" placeholder="请输入确认新密码" class="shouji">
+        </div>
+        <div class="shoujihao4">
+            <input type="submit" value="提交" class="tijiao">
+        </div>
+    </form>
+</body>
+
+</html>
+<!-- <script>
+var wait=60;
+function time(o) {
+		if (wait == 0) {
+			o.removeAttribute("disabled");			
+			o.value="免费获取验证码";
+			wait = 60;
+		} else {
+			o.setAttribute("disabled", true);
+			o.value="重新发送(" + wait + ")";
+			wait--;
+			setTimeout(function() {
+				time(o)
+			},
+			1000)
+		}
+	}
+  document.getElementsById("btn").οnclick=function(){
+    time(this);
+}
+</script> -->
+<script>
+    var wait = 60 ;
+    var btn_ = document.getElementById('btn');
+    btn_.onclick =function(){
+        wait--;
+        setInterval(wait,1000);
+        btn_.innerHTML=wait;
+    }
+    
+</script>
+
+<script>
+    var shouji_ = document.getElementsByClassName('shouji')[0];
+    var shouji2 = document.getElementsByClassName('shouji2')[0];
+
+</script>
