@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/nowregister.css">
+</head>
+
+<body>
+    <div class="allhead">
+        <div class="allhead_logo"></div>
+        <div class="allhead_my"><a href="./register.html"></a></div>
+        <div class="allhead_download"><a href="#"></a></div>
+    </div>
+
+    <div class="path">
+        <p><span><a href="./index.html">首页</a></span>><a href="">我的</a>>登录</p>
+    </div>
+
+    <div class="OnWay">
+        <p class="normal">普通登录</p>
+        <p class="shortcut">验证码快捷登录</p>
+    </div>
+
+    <form action="./欢迎回来.html" onsubmit="return regular()" class="normal_login">
+        <li><input type="text" placeholder="请输入手机号码" id="normal_user"></li>
+        <li><input type="password" placeholder="请输入密码" pattern="^\w{6,}$" required id="password"></li>
+        <button>立即登录</button>
+    </form>
+
+    <form action="./欢迎回来.html" class="quick_login" onsubmit="return regular1()">
+        <li><input type="text" placeholder="请输入手机号码" pattern="^1[34578][0-9]{9}$" required><span
+                class="yanzhengma">发送验证码</span></li>
+        <li><input type="password" placeholder="请输入短信中的验证码" id="quick_verification"></li>
+        <button>验证并登录</button>
+    </form>
+
+    <div class="foot"><a href="">立即注册</a><a href="">忘记密码</a></div>
+</body>
+
+</html>
+
+<script>
+    function chumo() {
+        var normal = document.getElementsByClassName('normal')[0];
+        var shortcut = document.getElementsByClassName('shortcut')[0];
+        var normal_login = document.getElementsByClassName('normal_login')[0];
+        var quick_login = document.getElementsByClassName('quick_login')[0];
+
+        normal.ontouchstart = function () {
+            normal.style.borderBottom = '.5rem solid rgb(255,138,0)';
+            shortcut.style.borderBottom = 'none';
+            quick_login.style.display = 'none';
+            normal_login.style.display = 'block';
+        }
+        shortcut.ontouchstart = function () {
+            shortcut.style.borderBottom = '.5rem solid rgb(255,138,0)';
+            normal.style.borderBottom = 'none';
+            normal_login.style.display = 'none';
+            quick_login.style.display = 'block';
+        }
+    }
+    chumo()
+
+    function regular() {
+        var normal_user = document.getElementById("normal_user").value;
+        var password = document.getElementById("password").value;
+        console.log(password);
+
+        var reg = /^1[34578][0-9]{9}$/;
+        if (normal_user == 0) {
+            alert('手机号不能为空')
+            return false;
+        } else if (reg.test(normal_user)) {
+
+            return true;
+        } else {
+            alert('输入错误，请正确输入！')
+            return false;
+        }
+
+    }
+
+    var str;;
+    const sj1 = Math.floor(Math.random() * 10);
+    const sj2 = Math.floor(Math.random() * 10);
+    const sj3 = Math.floor(Math.random() * 10);
+    const sj4 = Math.floor(Math.random() * 10);
+
+    str = sj1 + '' + sj2 + '' + sj3 + '' + sj4
+
+    function daojishi() {
+        var yanzhengma = document.getElementsByClassName('yanzhengma')[0];
+        var time = 60;
+        var timer;
+        yanzhengma.onclick = function () {
+            
+            clearInterval(timer);
+            timer = setInterval(function () {
+                if (time == 0) {
+                    clearInterval(timer);
+                    yanzhengma.innerHTML = '获取验证码';
+                    time = 60;
+                }else if(time == 56){
+                    alert('验证码是'+str)
+                    time--;
+                } else {
+                    time--;
+                    yanzhengma.innerHTML = time + '秒后重新发送'
+                }
+            }, 1000)
+
+        }
+    }
+    daojishi()
+
+    function regular1() {
+        var quick_verification = document.getElementById('quick_verification').value;
+        if (quick_verification == str) {
+            return true;
+        } else {
+            alert("验证码输入错误")
+            return false
+
+        }
+    }
+
+
+
+</script>
