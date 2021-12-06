@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 62.5%;
+}
+.allhead{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(255,138,0);position: relative;
+}
+.allhead_logo{
+    width: 40%;
+    height: 100%;
+    background: url(../img/logo.jpg) no-repeat center;
+    background-size: 100% 100%;
+    left: 3rem;
+    position: absolute;
+}
+.allhead_my>a{
+    width: 4rem;
+    height: 5rem;
+    background: url(../img/my.jpg) no-repeat center;
+    background-size: 77% 70%;
+    position: absolute;
+    right: 10rem;
+}
+.allhead_download>a{
+    width: 4rem;
+    height: 5rem;
+    background: url(../img/xiazai.jpg) no-repeat center;
+    background-size: 77% 70%;
+    position: absolute;
+    right: 5rem;
+}
