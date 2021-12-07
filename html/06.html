@@ -9,70 +9,200 @@
     <link rel="stylesheet" href="">
     <script src=""></script>
     <link rel="stylesheet" href="../css/06.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .foot {
+            width: 100%;
+            height: auto;
+            background-color: rgb(47, 49, 48);
+        }
+
+        .dibu {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .dibu>p {
+            width: 100%;
+            color: rgb(127, 141, 142);
+            font-size: 1.5rem;
+
+            display: inline-block;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .xian {
+            width: 100%;
+            height: .1rem;
+            background-color: rgb(62, 64, 63);
+        }
+
+        .dibui {
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .dibu1 {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .dibu1>img {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .pdiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dibu1>.pdiv>p:nth-of-type(1) {
+            color: rgb(127, 141, 142);
+        }
+
+        .dibu1>.pdiv>p:nth-of-type(2) {
+            color: rgb(127, 141, 142);
+        }
+
+        .dibu2 {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .dibu2>img {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .dibu2>.pdiv>p:nth-of-type(1) {
+            color: rgb(127, 141, 142);
+        }
+
+        .dibu2>.pdiv>p:nth-of-type(2) {
+            color: rgb(127, 141, 142);
+        }
+
+        .wenben {
+            width: 100%;
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .wenben>p {
+            color: rgb(127, 141, 142);
+            text-align: center;
+        }
+    </style>
 </head>
 
+<style>
+    .path {
+        width: 100%;
+        height: 4rem;
+        font-size: 1.3rem;
+        line-height: 4rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+        background-color: white;
+        border-bottom: 1px solid gainsboro;
+    }
+
+    .path a {
+        color: black;
+    }
+
+    .path>p>span>a {
+        font-weight: bold;
+    }
+</style>
+
 <body>
-    <div class="d1">
-        <p>
-            <span>首页</span>>北京租房>房源信息
-        </p>
+
+    <div class="allhead">
+        <div class="allhead_logo"></div>
+        <div class="allhead_my"><a href="../欢迎回来.html"></a></div>
+        <div class="allhead_download"><a href="#"></a></div>
     </div>
-  
 
-
-   <div class="d2">
-       <span>
-           分享
-       </span>
-   </div>
+    <div class="path">
+        <p><span><a href="../index.html">首页</a></span>><a href="../5.html">北京租房</a>>房源信息</p>
+    </div>
 
 
 
-   <ul class="ul1">
-       <li>
-           <span>天鹅湾小区精装两居，满五唯一，业主换房急售</span>  
-       </li>
-       <li>
-           <img src="../img/xin.png" alt=""><br>
-           关注
-       </li>
-   </ul>
-   
-   <ul class="ul2">
-       <li>
-           <p>租金</p>
-           <p>2300元/月</p>
-       </li>
-       <li>
-        <p>房型</p>
-        <p>2室1厅</p>
-       </li>
-       <li>
-        <p>面积</p>
-        <p>204平米</p>
-       </li>
-   </ul>
+    <div class="d2">
+        <span>
+            分享
+        </span>
+    </div>
 
 
 
-   <ul class="ul3">
-       <li>
-          <span>楼层：高楼/17层</span> 
-          <span>朝向：南北</span>
+    <ul class="ul1">
+        <li>
+            <span>天鹅湾小区精装两居，满五唯一，业主换房急售</span>
         </li>
-       <li>
-           <span>装修：精装</span>
-           <span>供暖：集体供暖</span>
-       </li>
-       <li>
-           <span>年代：2007年</span>
-           <span>楼型：板楼</span>
-       </li>
-   </ul>
+        <li>
+            <img src="../img/xin.png" alt=""><br>
+            关注
+        </li>
+    </ul>
+
+    <ul class="ul2">
+        <li>
+            <p>租金</p>
+            <p>2300元/月</p>
+        </li>
+        <li>
+            <p>房型</p>
+            <p>2室1厅</p>
+        </li>
+        <li>
+            <p>面积</p>
+            <p>204平米</p>
+        </li>
+    </ul>
 
 
 
-   <div class="d3">
+    <ul class="ul3">
+        <li>
+            <span>楼层：高楼/17层</span>
+            <span>朝向：南北</span>
+        </li>
+        <li>
+            <span>装修：精装</span>
+            <span>供暖：集体供暖</span>
+        </li>
+        <li>
+            <span>年代：2007年</span>
+            <span>楼型：板楼</span>
+        </li>
+    </ul>
+
+
+
+    <div class="d3">
         <ul class="ul4">
             <li>
                 经纪人房评
@@ -87,7 +217,7 @@
                 理位置优越。周边配套:颐堤港商
                 业中心，兆维大厦..
             </li>
-        </ul> 
+        </ul>
 
 
         <ul class="ul5">
@@ -124,15 +254,15 @@
                 </span>
             </li>
             <li>
-                <p>3室2厅，146平米，<span>5000元</span></p> 
-               <p>签约日期：2015-02-26</p>
+                <p>3室2厅，146平米，<span>5000元</span></p>
+                <p>签约日期：2015-02-26</p>
             </li>
         </ul>
 
         <div class="d4">
             <img src="../img/man.png" alt="" class="img1">
             <p>张三<br>
-            4001581855转0008</p>
+                4001581855转0008</p>
             <span>
                 <img src="../img/icon1.png" alt="" class="img2"><br>
                 致电
@@ -143,7 +273,34 @@
             </span>
         </div>
 
-   </div>
+    </div>
+
+    <div class="foot">
+        <div class="dibu">
+            <p>北京找房无忧 > 首页</p>
+            <div class="xian"></div>
+            <div class="dibui">
+                <div class="dibu1">
+                    <img src="../img/apple.png" alt="">
+                    <div class="pdiv">
+                        <p>iPhone</p>
+                        <p>客户端</p>
+                    </div>
+                </div>
+                <div class="dibu2">
+                    <img src="../img/android.png" alt="">
+                    <div class="pdiv">
+                        <p>android</p>
+                        <p>客户端</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wenben">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

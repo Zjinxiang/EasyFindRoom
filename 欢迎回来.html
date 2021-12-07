@@ -59,7 +59,7 @@
     .lie{
         width: 100%;
         height: auto;
-        border-bottom: 1px solid #999;
+        
     }
     .lie>ul{
         width: 90%;
@@ -84,6 +84,14 @@
       justify-content: space-between;
       padding: 1rem 0;
       font-size: 1.5rem;
+      border-bottom: 1px solid #999;
+    }
+    .lie>ul>li:nth-of-type(4){
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #999;
     }
     button{
         width: 90%;
@@ -96,6 +104,9 @@
     button>a{
         color: coral;
     }
+    a{
+        color: black;
+    }
 </style>
 
 <body>
@@ -104,13 +115,13 @@
         <div class="allhead_my"><a href="./register.html"></a></div>
         <div class="allhead_download"><a href="#"></a></div>
     </div>
-    <div class="lis">
+    <!-- <div class="lis">
         <ul>
             <li><a href="./index.html">首页</a></li>
             <li>></li>
             <li><a href="./register.html">我的</a></li>
         </ul>
-    </div>
+    </div> -->
     <div class="main">
         <img src="./img/bg2.png" alt="" width="100%" height="100%">
         <div class="zhong">
@@ -120,8 +131,9 @@
     </div>
     <div class="lie">
         <ul>
-            <li>我关注的房源<span>></span></li>
-            <li>我关注的小区<span>></span></li>
+            <li><a href="./index.html">我的首页</a><span>></span></li>
+            <li><a href="./5.html">我关注的房源</a><span>></span></li>
+            <li><a href="./html/09.html">我关注的小区</a><span>></span></li>
             <li>我的看房记录<span>></span></li>
         </ul>
     </div>
