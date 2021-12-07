@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 62.5%;
+}
+
+.d1 p {
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #cccc;
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: 5rem;
+    text-indent: 2rem;
+}
+
+.d1 p span {
+    font-weight: 600;
+}
+
+.d2 {
+    width: 100%;
+    height: 22rem;
+    background: url(../img/banner.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.d2>span {
+    width: 7rem;
+    height: 5rem;
+    display: inline-block;
+    background-color: rgb(27, 20, 15, .8);
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    border-radius: .8rem 0 0 .8rem;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.ul1 {
+    width: 100%;
+    height: 8rem;
+    list-style: none;
+    display: flex;
+}
+
+.ul1 li:nth-of-type(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.ul1 li:nth-of-type(1)>span {
+    padding-left: 2rem;
+}
+
+.ul1 li:nth-of-type(2) {
+    text-align: center;
+    padding-top: 2rem;
+    flex: 1;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.ul1 li:nth-of-type(2)>img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.ul2 {
+    width: 100%;
+    height: 10rem;
+    list-style: none;
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.ul2 li {
+
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.ul2 li:nth-of-type(1) {
+    border-right: 1px solid #ccc;
+    padding-right: 2.5rem;
+}
+
+.ul2 li:nth-of-type(2) {
+    border-right: 1px solid #ccc;
+    padding-right: 2.5rem;
+}
+
+.ul2 p {
+    text-align: center;
+}
+
+.ul2 li p:nth-of-type(2) {
+    color: rgb(253, 158, 47);
+}
+
+.ul3 {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ul3 li {
+    width: 90%;
+    height: 5rem;
+    line-height: 5rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+   
+    font-size: 1.5rem;
+}
+.ul3 li span{
+    width: 50%;
+    text-align: left;
+}
+.d3{
+    width: 100%;
+    height: 88rem;
+    border-top: 1px solid #ccc;
+    background-color: rgb(245,245,245);
+    /* background-color: rosybrown; */
+}
+.ul4{
+    width: 90%;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* padding: 2rem; */
+    list-style: none;
+    margin: 1rem auto;
+}
+.ul4 li:nth-of-type(1){
+    border-bottom: 1px solid #ccc;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,151,12);
+    position: relative;
+    text-indent: 2rem;
+}
+.ul4 li:nth-of-type(1) span img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.ul4 li:nth-of-type(1) span{
+    display:inline-block;
+    position: absolute;
+    right: 2rem;
+}
+.ul4 li:nth-of-type(2){
+    height: 13rem;
+    font-size: 1.5rem;
+    line-height: 3.3rem;
+    margin: 0.8rem;
+}
+.ul5{
+    width: 90%;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* padding: 2rem; */
+    list-style: none;
+    margin: 1rem auto;
+}
+.ul5 li:nth-of-type(1){
+    border-bottom: 1px solid #ccc;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,151,12);
+    position: relative;
+    text-indent: 2rem;
+}
+.ul5 li:nth-of-type(1) span img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.ul5 li:nth-of-type(1) span{
+    display:inline-block;
+    position: absolute;
+    right: 2rem;
+}
+.ul5 li:nth-of-type(2){
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 3.3rem;
+    margin: 0.8rem;
+}
+.ul6{
+    width: 90%;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* padding: 2rem; */
+    list-style: none;
+    margin: 1rem auto;
+}
+
+.ul6 li:nth-of-type(1){
+    border-bottom: 1px solid #ccc;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,151,12);
+    position: relative;
+    text-indent: 2rem;
+}
+.ul6 li:nth-of-type(1) span img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.ul6 li:nth-of-type(1) span{
+    display:inline-block;
+    position: absolute;
+    right: 2rem;
+}
+.ul6 li:nth-of-type(2) img{
+    width: 37rem;
+}
+.ul6 li:nth-of-type(2) h1{
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+.ul7{
+    width: 90%;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* padding: 2rem; */
+    list-style: none;
+    margin: 1rem auto;
+}
+
+.ul7 li:nth-of-type(1){
+    border-bottom: 1px solid #ccc;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,151,12);
+    position: relative;
+    text-indent: 2rem;
+}
+.ul7 li:nth-of-type(1) span img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.ul7 li:nth-of-type(1) span{
+    display:inline-block;
+    position: absolute;
+    right: 2rem;
+}
+.ul7 li:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    line-height: 6rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.ul7 li:nth-of-type(2) p span{
+    color: rgb(253, 158, 47);
+}
+.d4{
+    width: 100%;
+    height: 7rem;
+    background-color: white;
+    position: relative;
+}
+.d4 .img2,.img3{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+.d4>.img1{
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    top:1.3rem;
+    left: 2rem;
+    
+}
+.d4>span{
+    display: inline-block;
+    width: 5rem;
+    height: 6rem;
+    text-align: center;
+}
+.d4>p{
+    margin-left: 7.5rem;
+    padding-top: 1.2rem;
+    box-sizing: border-box;
+}
+.d4 span:nth-of-type(1){
+    position: absolute;
+    top: 1rem;
+    right: 11rem;
+    color: rgb(99,204,154);
+}
+.d4 span:nth-of-type(2){
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    color: rgb(119,179,224);
+}

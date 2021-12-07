@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 62.5%;
+}
+
+.d1 p {
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #cccc;
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: 5rem;
+    text-indent: 2rem;
+}
+.d1 p span{
+    font-weight: bold;
+}
+.ul1{
+    list-style: none;
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+.ul1 li{
+    width: 80%;
+    margin: 0 auto;
+    padding:2rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(255,126,0);
+}
+.ul1 img{
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    margin-left: -1.9rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+.d2{
+    float: right;
+    margin-right: -2rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+}
+.d2 span{
+    color: rgb(255,126,0);
+}
+.d3{
+    float: right;
+    margin-right: -2rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+}
+.d3 span{
+    color: rgb(255,126,0);
+}
+.d4{
+    float: right;
+    margin-right: -2rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+}
+.d4 span{
+    color: rgb(255,126,0);
+}
+.d5{
+    float: right;
+    margin-right: -2rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+}
+.d5 span{
+    color: rgb(255,126,0);
+}
