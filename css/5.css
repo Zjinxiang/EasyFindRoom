@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+
+.shou{
+    width: 85%;
+    margin: 0 auto;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem auto;
+}
+.shou>p:nth-of-type(1){
+
+    font-weight: 700;
+}
+.shou>p:nth-of-type(1)>a{
+    text-decoration: none;
+    color: black;
+}
+.shou>p:nth-of-type(2){
+    color: black;
+}
+.shou>p:nth-of-type(3)>a{
+    text-decoration: none;
+    color: black;
+}
+
+.head{
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(245,245,245);
+}
+.sou{
+    width: 85%;
+    height: 5rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    box-sizing: border-box;
+}
+.head>span:nth-of-type(1){
+    position: absolute;
+    top: 14rem;
+    right: 8.5rem;
+}
+.head>span:nth-of-type(2){
+    position: absolute;
+    top: 13rem;
+    right: 4rem;
+}
+
+
+.qu{
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+.qu>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.qu>ul>li{
+    margin: auto auto;
+    line-height: 5rem;
+    font-size: 1.5rem;
+}
+
+.nan{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.man1>img{
+    width: 10rem;
+    height: 10rem;
+}
+.man2{
+    margin-left: 1rem;
+}
+.man2>h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.man2>p:nth-of-type(1){
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.man2>p:nth-of-type(2){
+    margin-top: .5rem;
+    font-size: 1.5rem;
+}
+.man2>p:nth-of-type(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+.man2>p:nth-of-type(3)>span:nth-of-type(1){
+    width: 8rem;
+    height: 2rem;
+    border: 1px solid rgb(14, 241, 52);
+    color: rgb(14, 241, 52);
+    text-align: center;
+    line-height: 2rem;
+    border-radius: .5rem;
+}
+
+.man2>p:nth-of-type(3)>span:nth-of-type(2){
+    color: rgb(255,130,0);
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.cidn{
+    width: 85%;
+    height: .1rem;
+    background-color: rgb(255,130,0);
+    margin: 1.5rem auto;
+}
+
+
+
+
