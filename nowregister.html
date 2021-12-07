@@ -39,7 +39,7 @@
         <button>验证并登录</button>
     </form>
 
-    <div class="foot"><a href="">立即注册</a><a href="">忘记密码</a></div>
+    <div class="foot"><a href="./login.html">立即注册</a><a href="./findpassword.html">忘记密码</a></div>
 </body>
 
 </html>
@@ -91,7 +91,7 @@
     const sj3 = Math.floor(Math.random() * 10);
     const sj4 = Math.floor(Math.random() * 10);
 
-    str = sj1 + '' + sj2 + '' + sj3 + '' + sj4
+    str = sj1 + '' + sj2 + '' + sj3 + '' + sj4;
 
     function daojishi() {
         var yanzhengma = document.getElementsByClassName('yanzhengma')[0];
@@ -125,7 +125,6 @@
         } else {
             alert("验证码输入错误")
             return false
-
         }
     }
 
